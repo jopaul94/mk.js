@@ -26,8 +26,8 @@ canvas {
     background-color: #777;
 }
 body, html {
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: black;
     font-family: Verdana;
     font-size: 12px;
 }
@@ -40,10 +40,7 @@ body, html {
 #arena {
     width: 100%;
     height: 100%;
-    background-color: black;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    text-align: center;
 }
 #loading {
     width: 100%;
@@ -51,6 +48,8 @@ body, html {
     position: absolute;
     top: 0px;
     left: 0px;
+    text-align: center;
+    vertical-align: middle;
 }
 .lifebar {
     width: 200px;
@@ -120,7 +119,7 @@ body, html {
     margin-left: 150px;
 }
 .manual a {
-    color: #fff;
+    color: black;
 }
 .github {
     position: fixed;
@@ -140,7 +139,5 @@ body, html {
 .loadingLabel {
     font-size: 25px;
     font-weight: bold;
-    position: absolute;
-    left: 220px;
-    top: 150px;
+    margin-top:50%;
 }
