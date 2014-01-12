@@ -2,14 +2,58 @@
 <html>
 <head>
     <title>mk.js</title>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet' type='text/css'>
     <script src="src/movement.js"></script>
     <script src="src/mk.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">
+    </link>
+
 </head>
 <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="navbar-brand" href="#" style="font-family:'Allan'"><strong>MK.js</strong></a>
+</div><!--navbar header-->
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+  <li class="active"><a href="">Game <span class="glyphicon glyphicon-chevron-down"></span></a></li>
+  <li><a href="author.html">About the Author</a></li>
 
-<table>
+</ul>
+</div><!--navbar-collapse-->
+</div><!--entire navbar-->
+
+<div class="row">
+<div class="col-md-6">
+<h1> Arena</h1>
+<div>
+<div id="arena">
+<div id="player1Name" class="playerName">Sub-Zero</div>
+<div id="player1LifeBar" class="lifebar"><div class="life" id="player1Life"></div></div>
+<div id="player2Name" class="playerName">Kano</div>
+<div id="player2LifeBar" class="lifebar"><div class="life" id="player2Life"></div></div>
+</div><!-- arena -->
+</div>
+<div id="loading">
+<span class="loadingLabel">Loading...</span>
+</div>
+</div>
+<div class="col-md-6">
+<h1>Webcam</h1>
+</div>
+</div>
+
+   <!-- <table>
     <thead>
         <th>
             Arena
@@ -59,8 +103,8 @@
                 </p>
             </td>
         </tr>
-    </tbody> 
-    <div class="manual">
+    </tbody>  -->
+    <div class="manual">  
     </div>
     <script>
         (function () {
